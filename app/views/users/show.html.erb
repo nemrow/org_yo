@@ -1,0 +1,11 @@
+<h1>Homepage for <%= @user.first_name %></h1>
+<h3>Owned Projects</h3>
+<% @owned_projects.each do |project| %>
+  <%= link_to project.name, project_path(project) %>
+<% end %>
+
+<h3>Joined Projects</h3>
+<% @projects.each do |project| %>
+  <%= link_to project.name, project_path(project) %>
+<% end %>
+<%= link_to 'New Project', new_project_path %>

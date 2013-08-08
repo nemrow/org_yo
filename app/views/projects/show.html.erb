@@ -1,0 +1,12 @@
+<h3>Title:</h3>
+  <%= text_field_tag 'project[name]', @project.name, :class => 'project_title updatable_project_data', :data => 
+{:project_id => @project.id} %>
+
+<h3>Discussion:</h3>
+<%= button_to 'New Discussion', project_discussions_path(@project), :method => :post %>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    EditProject.init();
+  });
+</script>
