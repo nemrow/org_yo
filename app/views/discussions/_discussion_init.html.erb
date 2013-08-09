@@ -1,0 +1,5 @@
+<div class="indi-content-shell content-1 new_discussion_shell">
+  <%= text_field_tag 'discussion[title]', @discussion.title, :class => 'discussion_title updatable_discussion_data plain input-bottom-border-1 block text-input-1', :data => {:discussion_id => @discussion.id}, :placeholder => 'Title', :autocomplete => 'off' %>
+  <%= text_area_tag 'discussion[content]', @discussion.content, :class => 'discussion_content updatable_discussion_data plain block text-input-1', :data => {:discussion_id => @discussion.id}, :placeholder => 'Content' %>
+  <%= button_tag 'Start New Discussion', :class => 'add_discussion-btn', :data => {:discussion_id => @discussion.id} %>
+</div>

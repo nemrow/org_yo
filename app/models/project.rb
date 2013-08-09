@@ -4,4 +4,6 @@ class Project < ActiveRecord::Base
   has_many :users_projects
   belongs_to :creator, :class_name => 'User'
   has_many :discussions
+
+  default_scope order('updated_at DESC')
 end

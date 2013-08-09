@@ -18,6 +18,7 @@ FiveInch::Application.routes.draw do
     resources :discussions_responses
   end
   resources :session, :only => [:create, :destroy, :new]
+  resources :discussions_responses, :only => [:update]
   get 'login' => 'sessions#new'
   get 'signout' => 'sessions#destroy'
   get 'signup' => 'users#new'

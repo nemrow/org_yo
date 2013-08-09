@@ -1,9 +1,16 @@
-<h3>Title:</h3>
-  <%= text_field_tag 'project[name]', @project.name, :class => 'project_title updatable_project_data', :data => 
-{:project_id => @project.id} %>
+<%= text_field_tag 'project[name]', @project.name, :class => 'project_title updatable_project_data plain', :data => 
+{:project_id => @project.id}, :autocomplete => "off", :placeholder => 'Title' %>
+<hr class="line-1">
 
-<h3>Discussion:</h3>
-<%= button_to 'New Discussion', project_discussions_path(@project), :method => :post %>
+<h3 class="cat-header">Discussion:</h3>
+<%= button_to 'New Discussion', project_discussions_path(@project), :method => :post, :class => 'add_new_discussion_btn pure-button add-discussion-btn', :data => {:project_id => @project.id} %>
+<div class="discussion_shell">
+  <% @discussions.each do |discussion| %>
+    <%= render :partial => 'discussions/discussion_thumb', :locals => {:discussion => discussion} %>
+  <% end %>
+</div>
+
+<h3 class="cat-header">To-Do's:</h3>
 
 <script type="text/javascript">
   $(document).ready(function(){

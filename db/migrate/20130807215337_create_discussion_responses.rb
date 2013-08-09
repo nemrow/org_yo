@@ -3,6 +3,7 @@ class CreateDiscussionResponses < ActiveRecord::Migration
     create_table :discussion_responses do |t|
       t.text :content
       t.integer :discussion_id
+      t.integer :user_id
 
       t.timestamps
     end

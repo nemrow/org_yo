@@ -1,0 +1,35 @@
+.add-discussion-btn{
+  margin: 13px;
+}
+.project_title{
+  font-size: 34px;
+}
+h3.cat-header{
+    float: left;
+}
+.discussion-thumb-shell{
+  width: 100%;
+  margin: 10px auto;
+  p{
+    margin: 0px;
+  }
+  p.discussion-thumb-title{
+    margin: 5px auto;
+    font-weight: bold;
+  }
+}
+.discussion_response{
+  width: 100%;
+  border: 1px solid #ccc;
+}
+.responder-content{
+  margin: 0px;
+}
+.responder-name{
+  text-decoration: italic;
+  font-size: 11px;
+}
+.response_shell{
+  border-bottom: 1px solid #999;
+  padding-bottom: 10px;
+}

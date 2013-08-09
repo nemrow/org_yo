@@ -1,1 +1,4 @@
-<%= text_field_tag 'discussion_response[content]', @discussion_response.content, :placeholder => 'Content', :class => 'discussion_response updatable_discussion_response', :data => {:discussion_response_id => @discussion_response.id} %>
+<div class="create_new_response_shell">
+  <%= text_area_tag 'discussion_response[content]', @discussion_response.content, :placeholder => 'Content', :class => 'discussion_response updatable_discussion_response', :data => {:discussion_response_id => @discussion_response.id} %>
+  <%= link_to 'Add Response', 'javascript;', :class => 'pure-button update_response_button', :data => {:discussion_response_id => @discussion_response.id } %>
+</div>

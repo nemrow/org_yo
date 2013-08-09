@@ -16,6 +16,7 @@ ActiveRecord::Schema.define(:version => 20130807215337) do
   create_table "discussion_responses", :force => true do |t|
     t.text     "content"
     t.integer  "discussion_id"
+    t.integer  "user_id"
     t.datetime "created_at",    :null => false
     t.datetime "updated_at",    :null => false
   end
@@ -24,6 +25,7 @@ ActiveRecord::Schema.define(:version => 20130807215337) do
     t.string   "title"
     t.text     "content"
     t.integer  "project_id"
+    t.integer  "user_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end

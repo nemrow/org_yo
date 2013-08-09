@@ -1,0 +1,49 @@
+header{
+  padding-bottom: 20px;
+}
+.container{
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 10px;
+}
+hr.line-1{
+  size:2px;
+}
+hr.line-2{
+  size:1px;
+  background-color: #ccc;
+}
+input.plain, textarea.plain{
+  background: none;
+  border: none;
+  outline: none;
+}
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+.indi-content-shell{
+  clear: both;
+  overflow: auto;
+}
+.content-1{
+  margin: 10px 0;
+}
+.clear{
+  clear: both;
+}
+.block{
+  display: block;
+}
+input.input-bottom-border-1{
+  border-bottom: 1px solid !important;
+  padding-bottom: 11px !important;
+  margin-bottom: 11px !important;
+}
+.text-input-1{
+  width: 75%;
+  font-size: 30px;
+  font-weight: bold;
+}
