@@ -1,3 +1,0 @@
-<%= text_field_tag 'discussion[title]', @discussion.title, :class => 'discussion_title updatable_discussion_data', :data => {:discussion_id => @discussion.id}, :placeholder => 'Title' %>
-<%= text_area_tag 'discussion[content]', @discussion.content, :class => 'discussion_content updatable_discussion_data', :data => {:discussion_id => @discussion.id}, :placeholder => 'Content' %>
-<%= button_to 'add response', discussion_discussions_responses_path(@discussion) %>
